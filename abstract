@@ -1,0 +1,14 @@
+ABSTRACT:
+
+In this project we have analyzed 333 samples of primary tumor in prostate adenocarcinoma, 
+publicly accessible thanks to the consortium The Cancer Genome Atlas (TCGA). 
+We have selected omics data of these tumors in different platforms: mRNA, CNV, RPPA, Methylation, miRNA and molecular subtype among others.
+We have discovered, analyzed and validated our clustering exercise and we have found 4 subgroups of patients 
+based on the expression of 338 lncRNA genes. The contingency analysis of our cluster c2 showed correlation of 
+samples with other groups based on different omics groups described by the TCGA consortium in the magazine 
+Cell in 2015 in its article "The molecular taxonomy of primary prostate cancer". Interestingly, we found S
+POP mutated enriched in our cluster2 as well as extremely confidence correlation with mRNA cluster, methylation 
+cluster and molecular subtype. We have also analyzed our dataset with dimensionality reduction techniques, suitable 
+when the number of variables greatly exceeds the number of observations. This Principal Components Analysis (PCA) 
+allows us to capture the genes with greater specific weight to discriminate the groups of patients and could be the 
+starting point of future investigations with these genes.
