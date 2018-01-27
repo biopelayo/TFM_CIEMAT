@@ -1,7 +1,9 @@
-prad <- as.matrix(tcga_RSEM_gene_fpkm_PRAD_mean_of_repeated_samples_lncRNAs_primary_332_de_cell_combat_batchid_338genes)
+###########################################################################################
+#              Msc. PELAYO G. DE LENA RODRíGUEZ
+#            code for ConsensusClusterPlus (CCP)
+###########################################################################################
 
-
-
+# CCP for both dataset: original and perturbed
 
 cat("\nI. Running Consensus Clustering...\n\n")
 title<-c("PRAD_TFM_CCP")
@@ -83,19 +85,7 @@ icl[["itemConsensus"]][1:5,]
 
 
 
-## PAC code
-  
-kvec <- 2:max(k)
-x1 <- 0.1; x <- 0.9
-PAC <- rep(NA, length(kvec))
-names(PAC) <- paste("K=", kvec, sep = " ")
-for(i in kvec){M = ressimulated[[i]]$consensusMatrix
-Fn = ecdf(M[lower.tri(M)])
-PAC[i-1] = Fn(x) - Fn(x1)
-}#end for i
-# The optimal K
-optk = kvec[which.min(PAC)]
-View(PAC)
+
 
 
 
